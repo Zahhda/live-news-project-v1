@@ -13,7 +13,6 @@
     "mongoose": "^8.5.2",
     "morgan": "^1.10.0",
     "node-cache": "^5.1.2",
-    "rss-parser": "^3.13.0",
-    "react-native-razorpay-expokit": "2.1.1"
+    "rss-parser": "^3.13.0"
   }
 }
