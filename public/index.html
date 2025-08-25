@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live News Map</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Top controls -->
+  <div class="topbar">
+    <a href="/" style="display:flex;align-items:center;gap:6px;text-decoration:none;color:inherit;font-weight:700">
+          <img src="/img/logo.png" alt="Live News Map" style="height:32px;width:auto;border-radius:6px" />
+          <!-- <span style="font-size:16px;">Live News Map</span> -->
+        </a>
+    <select id="countrySelect"></select>
+    <select id="regionSelect"></select>
+    <button id="refreshBtn" title="Refresh current region">Refresh</button>
+    <button id="translateBtn" class="primary" title="Translate headlines to English">Translate to English</button>
+    <span id="dominantBadge" class="token-badge" title="Dominant news category for region">—</span>
+    <!-- <a href="/admin" style="margin-left:auto;color:#fff;text-decoration:none;">(testing)Admin Login</a> -->
+  </div>
+
+  <!-- Main layout -->
+  <div class="layout">
+    <div id="map"></div>
+    <div class="sidebar">
+      <div class="section-title">Latest News</div>
+      <div id="newsList"></div>
+    </div>
+  </div>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
